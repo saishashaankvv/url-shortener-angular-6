@@ -14,7 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. 
 
-To use it in the Java project which comes alongside this repo, copy paste the 'dist/' folder generated into the 'src/main/resources/static/' folder of the project.
+To use it in the Java project which comes alongside this repo, copy the contents of the `dist/` folder generated into the `src/main/resources/static/` folder of the project.
 
 
 
