@@ -10,7 +10,7 @@ export class AppComponent {
   originalUrl;
   shortenedUrl = "";
   isUrlShortened = false;
-  server_url = "http://localhost:8080/";
+  server_url = "http://localhost:8080/url/";
   constructor(private urlService:WebApiObservableService){
 
   }
@@ -20,7 +20,9 @@ export class AppComponent {
     createService(this.server_url+"shorten",{"url":this.originalUrl}).
     subscribe((response) => {
       this.shortenedUrl = JSON.parse(response._body).url;
+      if(!this.isUrlShortened){
       this.isUrlShortened = !this.isUrlShortened;
+      }
     },(error) => {
       console.log(error);
     });

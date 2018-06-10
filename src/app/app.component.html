@@ -1,5 +1,7 @@
+<div>
 <input type = "text" [(ngModel)] = "originalUrl" placeholder="e.g abc.com"/>
-<button (click)="getShortenedUrl()">Shorten</button>
+<button (click)="getShortenedUrl()">Shorten</button><br><br>
 <span *ngIf="isUrlShortened">Your url is <a href={{shortenedUrl}}>{{shortenedUrl}}</a></span>
+</div>
 
 

@@ -13,7 +13,8 @@ import { WebApiObservableService } from './app.service';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+
   ],
   providers: [WebApiObservableService],
   bootstrap: [AppComponent]
