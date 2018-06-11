@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { WebApiObservableService } from './app.service';
 import { NotificationsService } from "angular2-notifications";
 import { NgxSpinnerService } from 'ngx-spinner';
 
-=======
-import { WebApiObservableService} from './app.service';
->>>>>>> f15860fe6f7ae5da31fe3b02ff5007f6d9530ed9
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
