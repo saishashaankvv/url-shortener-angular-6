@@ -1,0 +1,35 @@
+<!-- <div>
+<input type = "text" [(ngModel)] = "originalUrl" placeholder="e.g abc.com"/>
+<button (click)="getShortenedUrl()">Shorten</button><br><br>
+<span *ngIf="isUrlShortened">Your url is <a href={{shortenedUrl}}>{{shortenedUrl}}</a></span>
+</div> -->
+<h1 class="title "><strong>URL Shortener</strong></h1>
+<hr/>
+<p>Type or Paste your URL below to get custom Short URL.</p>
+<div class="container-fluid custom-container center-block">
+    <div class="row">
+        <div class="col-12 card-center">
+            <div class="custom-card card w-50">
+                <div class="card-block">
+                    <!-- <h3 class="card-title">URL Shortener</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <div class="input-group mb-5 ">
+                        <input 
+                            type="text" 
+                            pattern="^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$"
+                            title="Please Enter a Valid URL"
+                            class="form-control col-sm-12" 
+                            [(ngModel)] = "originalUrl" 
+                            placeholder="e.g. google.com" 
+                            aria-label="URL" 
+                            aria-describedby="basic-addon2" autofocus>
+                        <div class="input-group-append bg-primary">
+                            <button (click)="getShortenedUrl();" class="input-group-text bg-primary text-white btn " id="basic-addon2">Shorten</button>
+                        </div>
+                    </div>
+                    <p class="card-text" *ngIf="isUrlShortened">Your URL is <a target="_blank" href={{shortenedUrl}}>{{shortenedUrl}}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
