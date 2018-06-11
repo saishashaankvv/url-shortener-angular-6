@@ -23,6 +23,24 @@ hr{
     cursor : pointer;
     box-shadow: 2px 2px #444;
 }
+
+a:link {
+    color: #ff8300;;
+}
+
+a:visited {
+    color: #ff6060;
+}
+
+a:hover {
+    color: #489b00;
+}
+
+a:active {
+    color: #018c9b;
+}
+
+
 .custom-button:after {
     content: "";
     background: #59a5f7;
