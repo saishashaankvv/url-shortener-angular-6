@@ -17,7 +17,6 @@ export class AppComponent {
   originalUrl;
   shortenedUrl = "";
   isUrlShortened = false;
-<<<<<<< HEAD
   server_url = "http://localhost:3000/url/";
     public options = {
     position: ["top", "right"],
@@ -50,23 +49,5 @@ export class AppComponent {
           console.log(error);
         });
     }
-=======
-  server_url = "http://localhost:8080/url/";
-  constructor(private urlService:WebApiObservableService){
-
-  }
-
-  getShortenedUrl(){
-    this.urlService.
-    createService(this.server_url+"shorten",{"url":this.originalUrl}).
-    subscribe((response) => {
-      this.shortenedUrl = JSON.parse(response._body).url;
-      if(!this.isUrlShortened){
-      this.isUrlShortened = !this.isUrlShortened;
-      }
-    },(error) => {
-      console.log(error);
-    });
->>>>>>> f15860fe6f7ae5da31fe3b02ff5007f6d9530ed9
   }
 }
