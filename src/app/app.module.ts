@@ -6,6 +6,7 @@ import {HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { WebApiObservableService } from './app.service';
 import { SimpleNotificationsModule } from 'angular2-notifications';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
     ReactiveFormsModule,
     HttpModule,
     BrowserAnimationsModule,
+     NgxSpinnerModule,
     SimpleNotificationsModule.forRoot()
   ],
   providers: [WebApiObservableService],
